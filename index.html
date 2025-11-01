@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Tracker Ultimate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>💸 Money Tracker <span>Ultimate</span></h1>
+      <p id="motivationalText">Let’s manage your finances smartly!</p>
+    </header>
+
+    <section class="main-content">
+      <!-- Left Side: Summary + Chart -->
+      <div class="left-panel">
+        <div class="cards">
+          <div class="card income">
+            <h3>Income</h3>
+            <p id="income">₹0</p>
+          </div>
+          <div class="card expense">
+            <h3>Expense</h3>
+            <p id="expense">₹0</p>
+          </div>
+          <div class="card balance">
+            <h3>Balance</h3>
+            <p id="balance">₹0</p>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="chart"></canvas>
+        </div>
+      </div>
+
+      <!-- Right Side: Transactions -->
+      <div class="right-panel">
+        <h2>➕ Add Transaction</h2>
+        <div class="inputs">
+          <input type="text" id="desc" placeholder="Description">
+          <input type="number" id="amount" placeholder="Amount (+/-)">
+          <button id="addBtn">Add</button>
+        </div>
+
+        <h3>📜 Transaction History</h3>
+        <ul id="list"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>🧠 Designed by <strong>Nehal Kwatra</strong> & <strong>Aditya Bhashkar</strong> | Advanced Dashboard Edition</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
